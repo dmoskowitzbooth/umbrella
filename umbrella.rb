@@ -19,7 +19,7 @@ pirate_parsed=JSON.parse(pirate_response)
 pirate_currently=pirate_parsed.fetch("currently").fetch("precipProbability")
 if
   pirate_currently>0.5
-  pp "Better bring an umbrella!"
+  pp "Better bring an umbrella! The chance of precipitation right now is #{pirate_currently}"
 else
-  pp "You're likely fine without an umbrella"
+  pp "You're likely fine without an umbrella. The chance of precipitation right now is #{pirate_currently}"
 end

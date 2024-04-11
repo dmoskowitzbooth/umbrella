@@ -23,3 +23,5 @@ if
 else
   pp "You're likely fine without an umbrella. The chance of precipitation right now is #{pirate_currently}"
 end
+pirate_hourly=pirate_currently=pirate_parsed.fetch("hourly").fetch("data")
+pp pirate_hourly
